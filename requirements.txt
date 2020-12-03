@@ -4,6 +4,6 @@ channels==3.0.2
 django-cors-headers==3.2.1
 Pillow==8.0.1
 angularcli==8.3.25
-node==12.14.1
+node==12.18.3
 rxjs==6.4.0
 ionic==5.4.16
