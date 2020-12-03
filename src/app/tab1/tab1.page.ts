@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import {IonSlides} from '@ionic/angular';
+import {ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-tab1',
@@ -8,5 +10,14 @@ import { Component } from '@angular/core';
 export class Tab1Page {
 
   constructor() {}
+
+  @ViewChild('mySlider') slider: IonSlides;
+
+  slideOpts = {
+    initialSlide: 0,
+    speed: 450,
+    autoplay: true,
+    loop:true,
+  };
 
 }

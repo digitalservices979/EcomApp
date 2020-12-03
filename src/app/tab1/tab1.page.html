@@ -1,17 +1,118 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 1
+      Inicio
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+<ion-content [fullscreen]="true" padding>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-searchbar showCancelButton="never" placeholder="buscar" animated>
+          
+        </ion-searchbar>
+      </ion-col>
+    </ion-row>
+    <ion-row style="height: 200px;">
+        <ion-slides [options]="slideOpts" loop="true" #mySlider>
+          <ion-slide class="imagen">
+            <ion-img src="../../assets/images/slide1.jpg"></ion-img>
+          </ion-slide>
+          <ion-slide class="imagen">
+            <ion-img src="../../assets/images/slide3.jpg"></ion-img>
+          </ion-slide>
+          <ion-slide class="imagen">
+            <ion-img src="../../assets/images/slide2.jpg"></ion-img>
+          </ion-slide>
+        </ion-slides>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-text>Especiales</ion-text>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-card>
+          <img src="../../assets/images/marina.jpg" class="image-slide">
+          <ion-card-header>
+            Comida Marina
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card>
+          <img src="../../assets/images/parrilla.jpg" class="image-slide">
+          <ion-card-header>
+            Parrillas
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-card>
+          <img src="../../assets/images/postre.jpg" class="image-slide">
+          <ion-card-header>
+            Postres
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card>
+          <img src="../../assets/images/bebida.jpg" class="image-slide">
+          <ion-card-header>
+            Bebidas
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-text>
+          Menú del día
+        </ion-text>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-list>
+          <ion-list-header lines="inset">
+            <ion-label color="secondary">Entradas</ion-label>
+          </ion-list-header>
+          <ion-item>
+            <ion-label>Sopa</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>Tequeños</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>Ensalada</ion-label>
+          </ion-item>
+        </ion-list>
+        <ion-list>
+          <ion-list-header lines="inset">
+            <ion-label color="secondary">Segundos</ion-label>
+          </ion-list-header>
+          <ion-item>
+            <ion-label>Tallarines con bisteck</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>Seco de pollo</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>Pescado frito</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>Arroz con pollo</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>Pure con hígado</ion-label>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
