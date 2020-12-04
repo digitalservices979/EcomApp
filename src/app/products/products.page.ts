@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-products',
@@ -6,10 +7,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./products.page.scss'],
 })
 export class ProductsPage implements OnInit {
+	category:string;
+  constructor(private activatedRoute:ActivatedRoute) {
+  	this.activatedRoute.paramMap.subscribe(params=>{
+  		this.category = params.get('category');
+  	})
+   }
 
-  constructor() { }
+   title:string;
 
   ngOnInit() {
+  }
+
+  ionViewWillEnter(){
+  	this.title = this.category
   }
 
 }

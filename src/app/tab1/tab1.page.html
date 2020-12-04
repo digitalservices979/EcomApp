@@ -35,7 +35,7 @@
     </ion-row>
     <ion-row>
       <ion-col>
-        <ion-card>
+        <ion-card (click)="goCategory('marina')">
           <img src="../../assets/images/marina.jpg" class="image-slide">
           <ion-card-header>
             Comida Marina
@@ -43,7 +43,7 @@
         </ion-card>
       </ion-col>
       <ion-col>
-        <ion-card>
+        <ion-card (click)="goCategory('parrilla')">
           <img src="../../assets/images/parrilla.jpg" class="image-slide">
           <ion-card-header>
             Parrillas
@@ -53,7 +53,7 @@
     </ion-row>
     <ion-row>
       <ion-col>
-        <ion-card>
+        <ion-card (click)="goCategory('postre')">
           <img src="../../assets/images/postre.jpg" class="image-slide">
           <ion-card-header>
             Postres
@@ -61,7 +61,7 @@
         </ion-card>
       </ion-col>
       <ion-col>
-        <ion-card>
+        <ion-card (click)="goCategory('bebida')">
           <img src="../../assets/images/bebida.jpg" class="image-slide">
           <ion-card-header>
             Bebidas
